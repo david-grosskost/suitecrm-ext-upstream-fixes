@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.1](https://github.com/david-grosskost/suitecrm-ext-upstream-fixes/compare/v0.1.0...v0.1.1) (2026-11-08)
+
+
+### Bug Fixes
+
+* accept the null arguments suitecrm gives the hook ([#3](https://github.com/david-grosskost/suitecrm-ext-upstream-fixes/issues/3)) ([6c022c9](https://github.com/david-grosskost/suitecrm-ext-upstream-fixes/commit/6c022c9dd5a48233c1fbe80cb2ad72213bb384d6))
+
 ## 0.1.0 (2026-11-08)
 
 
