@@ -18,11 +18,11 @@ final class EmptyEntryPoint
 {
     /**
      * after_entry_point logic hook (application-wide, so without a bean): runs
-     * once SuiteCRM is loaded, before it handles the request.
-     *
-     * @param array<mixed> $arguments
+     * once SuiteCRM is loaded, before it handles the request. SuiteCRM calls it
+     * with null arguments (LogicHook::call_custom_logic), hence mixed: a
+     * stricter type stops SuiteCRM on every request.
      */
-    public function remove(string $event, array $arguments): void
+    public function remove(string $event, mixed $arguments = null): void
     {
         $_GET = self::clean($_GET);
         $_POST = self::clean($_POST);

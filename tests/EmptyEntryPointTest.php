@@ -43,7 +43,8 @@ final class EmptyEntryPointTest extends TestCase
         $_POST = ['entryPoint' => '', 'action' => 'ChangePassword'];
         $_REQUEST = ['entryPoint' => '', 'action' => 'ChangePassword'];
 
-        (new EmptyEntryPoint())->remove('after_entry_point', []);
+        // As SuiteCRM calls it: no arguments (null).
+        (new EmptyEntryPoint())->remove('after_entry_point', null);
 
         self::assertSame([], $_GET);
         self::assertSame(['action' => 'ChangePassword'], $_POST);
