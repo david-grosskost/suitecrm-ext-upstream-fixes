@@ -1,18 +1,20 @@
 {
-    "name": "david-grosskost/suitecrm-ext-exemple",
-    "description": "Extension d'exemple du modèle des extensions SuiteCRM.",
+    "name": "david-grosskost/suitecrm-ext-upstream-fixes",
+    "description": "Correctifs de bugs de SuiteCRM, en attendant leur correction dans SuiteCRM.",
     "type": "suitecrm-extension",
     "license": "proprietary",
     "require": {
         "php": ">=8.4"
     },
     "require-dev": {
-        "david-grosskost/suitecrm-devkit": "^0.18"
+        "david-grosskost/suitecrm-devkit": "^0.19"
     },
     "autoload-dev": {
-        "classmap": ["legacy/include/"],
+        "classmap": [
+            "legacy/include/"
+        ],
         "psr-4": {
-            "SuiteCrmExt\\Exemple\\Tests\\": "tests/"
+            "SuiteCrmExt\\UpstreamFixes\\Tests\\": "tests/"
         }
     },
     "repositories": [

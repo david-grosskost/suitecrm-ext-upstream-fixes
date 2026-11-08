@@ -1,7 +1,7 @@
 {
-    "slug": "exemple",
-    "name": "Exemple",
-    "description": "Extension d'exemple du modèle : à remplacer par ce que fait votre extension, en mots métier.",
+    "slug": "upstream-fixes",
+    "name": "Correctifs de SuiteCRM",
+    "description": "Corrige des bugs de SuiteCRM lui-même, en attendant qu'une version de SuiteCRM les corrige : par exemple, le changement de mot de passe demandé à la première connexion s'enregistre enfin.",
     "types": ["logic-hook"],
-    "suitecrm": ">=8.10 <9"
+    "suitecrm": ">=8.10 <8.11"
 }
