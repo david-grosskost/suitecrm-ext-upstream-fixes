@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.1](https://github.com/david-grosskost/suitecrm-ext-upstream-fixes/compare/v0.2.0...v0.2.1) (2026-11-16)
+
+
+### Bug Fixes
+
+* save the administration settings posted by their forms ([#11](https://github.com/david-grosskost/suitecrm-ext-upstream-fixes/issues/11)) ([0cef9b8](https://github.com/david-grosskost/suitecrm-ext-upstream-fixes/commit/0cef9b8007cf5c75ecd5be1ad4ce6afe2ddacd6b))
+
 ## [0.2.0](https://github.com/david-grosskost/suitecrm-ext-upstream-fixes/compare/v0.1.1...v0.2.0) (2026-11-08)
 
 
