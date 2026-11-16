@@ -14,3 +14,12 @@ $hook_array['after_entry_point'][] = [
     'SuiteCrmExt\UpstreamFixes\EmptyEntryPoint',
     'remove',
 ];
+
+// Administration settings never saved by SuiteCRM 8: see PostedSettings.
+$hook_array['after_entry_point'][] = [
+    20,
+    'upstream-fixes : réglages d\'administration postés recopiés là où SuiteCRM les lit',
+    'custom/include/upstream-fixes/PostedSettings.php',
+    'SuiteCrmExt\UpstreamFixes\PostedSettings',
+    'copy',
+];

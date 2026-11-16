@@ -9,6 +9,7 @@ de suitecrm-core).
 | Bug | Effet sans le correctif | Correctif |
 |---|---|---|
 | Le formulaire de changement de mot de passe envoie un champ `entryPoint` vide | Le changement demandé à la première connexion (ou après une réinitialisation) ne s'enregistre pas : « Aucune action avec ce nom » | Hook `after_entry_point` : un `entryPoint` vide est retiré de la requête ([`EmptyEntryPoint`](legacy/include/upstream-fixes/EmptyEntryPoint.php)) |
+| `Administration::saveConfig()` lit `$_GET` depuis SuiteCRM 8 (SuiteCRM 7 lisait `$_POST`), alors que les formulaires d'administration postent leurs valeurs | Les réglages rangés dans la table `config` ne s'enregistrent jamais : le « Nom du système » (Paramètres système) reste « SuiteCRM », dans l'onglet du navigateur comme dans le nom de l'application installable | Hook `after_entry_point` : quand un formulaire de réglages est posté, les réglages de ces catégories (`system_…`, `notify_…`, `proxy_…`…) sont recopiés dans `$_GET` ([`PostedSettings`](legacy/include/upstream-fixes/PostedSettings.php)) |
 
 ## Version de SuiteCRM
 
