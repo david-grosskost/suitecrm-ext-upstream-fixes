@@ -10,10 +10,8 @@
         "david-grosskost/suitecrm-devkit": "^0.26"
     },
     "autoload-dev": {
-        "classmap": [
-            "legacy/include/"
-        ],
         "psr-4": {
+            "SuiteCrmExt\\UpstreamFixes\\": "legacy/include/upstream-fixes/",
             "SuiteCrmExt\\UpstreamFixes\\Tests\\": "tests/"
         }
     },
